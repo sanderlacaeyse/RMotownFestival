@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMotownFestival.Api", "src\RMotownFestival.Api\RMotownFestival.Api.csproj", "{31D1A820-14BF-44A9-8271-A77BF244B08E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMotownFestival.Api", "src\RMotownFestival.Api\RMotownFestival.Api.csproj", "{31D1A820-14BF-44A9-8271-A77BF244B08E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMotownFestival.Functions", "src\RMotownFestival.Functions\RMotownFestival.Functions.csproj", "{B9EBFF8C-CAC4-4E0A-B8E0-3FEF121E6ACF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMotownFestival.MailerConsole", "src\RMotownFestival.MailerConsole\RMotownFestival.MailerConsole.csproj", "{A07BFD42-8FA1-4F79-995B-CBB6FC235355}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{31D1A820-14BF-44A9-8271-A77BF244B08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31D1A820-14BF-44A9-8271-A77BF244B08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31D1A820-14BF-44A9-8271-A77BF244B08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9EBFF8C-CAC4-4E0A-B8E0-3FEF121E6ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EBFF8C-CAC4-4E0A-B8E0-3FEF121E6ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EBFF8C-CAC4-4E0A-B8E0-3FEF121E6ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9EBFF8C-CAC4-4E0A-B8E0-3FEF121E6ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07BFD42-8FA1-4F79-995B-CBB6FC235355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07BFD42-8FA1-4F79-995B-CBB6FC235355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07BFD42-8FA1-4F79-995B-CBB6FC235355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07BFD42-8FA1-4F79-995B-CBB6FC235355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

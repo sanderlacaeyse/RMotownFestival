@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PicturesApiService } from 'src/app/api-services/pictures-api.service';
-import { share } from 'rxjs/operators';
+import { publishReplay, refCount } from 'rxjs/operators';
 
 @Component({
   selector: 'app-pictures',
-  templateUrl: './pictures.component.html'
+  templateUrl: './pictures.component.html',
 })
 export class PicturesComponent implements OnInit {
-
   pictureUrls$: Observable<string[]>;
 
-  constructor(private picturesApiService: PicturesApiService) { }
+  constructor(private picturesApiService: PicturesApiService) {}
 
   ngOnInit(): void {
-    this.pictureUrls$ = this.picturesApiService.getAllUrls()
-      .pipe(share());
+    this.pictureUrls$ = this.picturesApiService
+      .getAllUrls()
+      .pipe(publishReplay(1), refCount());
   }
 }
